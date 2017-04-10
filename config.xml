@@ -6,8 +6,8 @@
     version     = "0.0.1" >
     <!-- versionCode is optional and Android only -->
     
-<name>Assignment 4 App</name>
-<description>         Mobile App for assignment 4     </description>
+<name>Assignment 6 App</name>
+<description>         Mobile App for Assignment 6     </description>
 <author>         Nathan Turbville      </author>
 <preference name="phonegap-version" value="cli-6.3.0" />
 <plugin name="cordova-plugin-whitelist" source="npm" />

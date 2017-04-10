@@ -1,14 +1,14 @@
 section.title {text-align: left; position: relative;}
 
-section.section1 { visibility: hidden; padding: 40px; overflow: scroll; position: absolute;
+section.section1 { visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
     top: 115px; width: 100%;}
 
 section.section2
-{ visibility: hidden; padding: 40px; overflow: scroll; position: absolute;
+{ visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
     top: 115px; width: 100%;}
 
 section.section3
-{ visibility: hidden; padding: 40px; overflow: scroll; position: absolute;
+{ visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
     top: 115px; width: 100%;}    
 
 #orderdisplay {background-color: #FFFFCC; }
