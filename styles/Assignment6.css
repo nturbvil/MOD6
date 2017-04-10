@@ -1,15 +1,15 @@
 section.title {text-align: left; position: relative;}
 
 section.section1 { visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
-    top: 115px; width: 100%;}
+    top: 115px; width: 600px;}
 
 section.section2
 { visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
-    top: 115px; width: 100%;}
+    top: 115px; width: 600px;}
 
 section.section3
 { visibility: hidden; padding: 10px; overflow: scroll; position: absolute;
-    top: 115px; width: 100%;}    
+    top: 115px; width: 600px;}    
 
 #orderdisplay {background-color: #FFFFCC; }
 
