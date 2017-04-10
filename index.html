@@ -2,43 +2,85 @@
 
 <html>
 <head>
-    <title>Assignment4/</title>
-    <link rel="stylesheet" type="text/css" href="styles/Assignment4.css" />
-   <script src="js/Assignment4.js"></script>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+   <script src="js/Assignment6.js"></script>
+
+
+   
    
 
 </head>
 
 <body>
+    <title>Assignment 6</title>
+ 
+    </head>
+    <body>
     <section id="title" class="title">
-        <h1> Assignment 4 Project</h1>
+        <h1>Customer Information Application</h1>
         <hr>
-          <select id="menu" onchange="MenuChoice()">
+          <select id="menu" onchange="MenuChoice();">
             <option>Select An Option</option>
-            <option>Show Area 1</option>
-            <option>Show Area 2</option>
+            <option>Create Customer</option>
+            <option>Update Ship-To Address</option>
+            <option>Delete Customer</option>
         </select>
           <hr>
     </section>
-    <section id="section1" class="section1">
-     <img src="images/office-594132_960_720.jpg" alt="Office Pic" height="100" width="100">
-    <h4>Here is the 1st area.</h4>
-    <p>Nam a aliquam ligula. Pellentesque ut dignissim mi. Nullam semper lacus in nibh viverra placerat.
-    Quisque eu ex nec felis finibus mollis. Nunc nec nibh quis lectus dignissim dignissim.</p>
-    </section>
-    <div class="relative"><section id="section2" class="section2">
-    <img src="images/tax-468440_960_720.jpg" alt="Tax Pic" height="100" width="100">
-    <h4>Here is the 2nd area.</h4>
-    <p>Nam a aliquam ligula. Pellentesque ut dignissim mi. Nullam semper lacus in nibh viverra placerat.
-    Quisque eu ex nec felis finibus mollis. Nunc nec nibh quis lectus dignissim dignissim.</p>
-    </section>
+        <section id="section1" class="section1">
+             <h4>Create Customer</h4>
+             <label>Customer ID: </label><br>
+             <input type="text" id="custid"><br>
+             <label class="example"><sub> *The customer ID should be 5 uppercase text characters.</sub></label>
+             <br><br>
+             <label>Customer Name: </label><br>
+             <input type="text" id="custname">
+             <br><br>
+             <label>Customer City:</label><br>
+             <input type="text" id="custcity"><br>
+             <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+             <hr>
+             <br>
+             <label id="result">Result shown here</label> 
+        </section>
+        <div class="relative">
+            <section id="section2" class="section2">
+            <h4>Change Ship-To Address</h4>
+            <label>Order ID: </label><br>
+             <input type="text" id="orderid"><br>
+             <label class="example"><sub>*The customer ID should be 5 uppercase text characters.</sub></label>
+             <br><br>
+             <label>Shipping Address: </label><br>
+             <input type="text" id="shipaddress">
+             <br><br>
+             <label>Shipping City: </label><br>
+             <input type="text" id="shipcity">
+             <br><br>
+             <label>Shipping Name: </label><br>
+             <input type="text" id="shipname">
+             <br><br>
+             <label>Shipping Postal Code: </label><br>
+             <input type="text" id="shippostal"><br>
+             <button onclick="ChangeShipTo()" id="changeshipto">Change Address</button>
+             <hr>
+           <label id="s2result">Result shown here</label>
+           
+        </div>
+    <div class="relative">
+            <section id="section3" class="section3">
+         <h4>Delete Customer</h4>
+            <label>Please enter a Customer ID: </label><br>
+            <input type="text" id="custid2">
+            <br>
+            <button onclick="DeleteCustomer()" id="orders">Delete Customer</button>
+            <hr>
+            <br>
+            <label id="s3result">Result shown here</label>
+            </section>
     </div>
+    
+    
 </body>
-<footer>
-    <div class="fixed">
-        <hr>
-    <p>Nathan Turbville</p>
-    <p>nturbvil@uab.edu</p>
-    </div>
-</footer>
+
 </html>
